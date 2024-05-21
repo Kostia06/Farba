@@ -1,0 +1,14 @@
+clang++ @f . .cpp -std=c++17 -o main
+-I /opt/homebrew/Cellar/sdl2/2.30.3/include/SDL2
+-L /opt/homebrew/Cellar/sdl2/2.30.3/lib
+-l SDL2
+-I /opt/homebrew/Cellar/sdl2_image/2.8.2_1/include/SDL2
+-L /opt/homebrew/Cellar/sdl2_image/2.8.2_1/lib
+-l sdl2_image
+-I /opt/homebrew/Cellar/sdl2_ttf/2.22.0/include/SDL2
+-L /opt/homebrew/Cellar/sdl2_ttf/2.22.0/lib
+-l sdl2_ttf
+@r
+
+./main @r
+rm -f main @r
