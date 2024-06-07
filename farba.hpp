@@ -258,4 +258,15 @@ class Farba{
             SDL_FreeSurface(surface);
             SDL_DestroyTexture(texture);
         }
+        // get font size
+        int getFontWidth(string text = "A"){
+            int w, h;
+            TTF_SizeText(currentFont, text.c_str(), &w, &h);
+            return w;
+        }
+        int getFontHeight(string text = "A"){
+            int w, h;
+            TTF_SizeText(currentFont, text.c_str(), &w, &h);
+            return h;
+        }
 };

@@ -1,4 +1,4 @@
-#include "src/farba.hpp"
+#include "farba.hpp"
 
 int main() {
     Farba farba = Farba();
