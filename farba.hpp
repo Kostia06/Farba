@@ -79,7 +79,7 @@ class Farba{
                     break;
                 }
                 case SDL_MOUSEMOTION:{
-                    mouse[X] = event.motion.x*2;  mouse[Y] = event.motion.y*2;
+                    mouse[MOUSE_X] = event.motion.x*2;  mouse[MOUSE_Y] = event.motion.y*2;
                     break;
                 }    
                 case SDL_KEYDOWN:{
@@ -164,15 +164,15 @@ class Farba{
         }
 
         // check if the key is pressed
-        bool keyPressed(int key){
+        bool getKey(int key){
             if(key < MAX_KEYS) return keys[key]; 
             return false;
         }
 
         // check if the mouse button is pressed
-        bool mousePressed(int button){
+        int getMouse(int button){
             if(button < MAX_MOUSE) return mouse[button]; 
-            return false;
+            return -1;
         }
 
         // set color

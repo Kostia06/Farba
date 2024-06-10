@@ -11,7 +11,9 @@ int main() {
         farba.setColor(0, 255, 0);
         farba.rect(200, 200, 100, 100, false);
         farba.setColor(0, 0, 255, 100);
-        farba.circle(300, 300, 150, true);
+        int x = farba.getMouse(MOUSE_X);
+        int y = farba.getMouse(MOUSE_Y);
+        farba.circle(x, y, 150, true);
         farba.setColor(255, 255, 255); 
         farba.line(0, 0, 640, 480, 50, 50); 
     }

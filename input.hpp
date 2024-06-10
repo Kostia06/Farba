@@ -6,8 +6,8 @@
 #define MOUSE_RIGHT 2
 #define SCROLL_X 3
 #define SCROLL_Y 4
-#define X 5
-#define Y 6
+#define MOUSE_X 5
+#define MOUSE_Y 6
 #define LEFT_PRESSED 7
 #define MIDDLE_PRESSED 8
 #define RIGHT_PRESSED 9
